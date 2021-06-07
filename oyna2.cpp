@@ -16,7 +16,7 @@ oyna2::oyna2(QWidget *parent) :
     ui(new Ui::oyna2)
 {
 
-
+        ui->setupUi(this);
         QSqlDatabase db2 = QSqlDatabase::addDatabase("QSQLITE");
         db2.setHostName("localhost");
         db2.setDatabaseName("C:/Users/User/Desktop/users.db");
@@ -31,9 +31,9 @@ oyna2::oyna2(QWidget *parent) :
         QSqlTableModel *model;
             model = new QSqlTableModel(this);
             model->setTable("students");
-            ui->tableView->setModel(model);
             model->select();
-        ui->setupUi(this);
+            ui->tableView->setModel(model);
+
 }
 
 oyna2::~oyna2()
