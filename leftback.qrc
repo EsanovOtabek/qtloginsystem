@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/new/leftback">
+        <file>leftback.jpg</file>
+    </qresource>
+</RCC>
