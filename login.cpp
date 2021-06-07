@@ -64,8 +64,7 @@ void login::on_pushButton_clicked()
         kk++;
     }
     if(kk>0){
-        QString fio = query.value("id").toString();
-        QMessageBox::information(this,"kirish",fio+". \tLogin va Parol tasdiqlandi!!!\n",QMessageBox::Cancel);
+        QMessageBox::information(this,"kirish",". \tLogin va Parol tasdiqlandi!!!\n",QMessageBox::Cancel);
         QTextStream fout1(&file1);
         QString t1=fout1.readAll()+"\n";
         fout1<<sdate<<" da. \t"<<stime<<".\n";
